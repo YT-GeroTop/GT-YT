@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formate.css">
+    <link rel="stylesheet" href="js/hamburgermenu.js">
+    
+    <style>
+        
+        
+    </style>
+</head>
+<body id="body">
+    <header>
+        <a id="meinBild" href="/"><img src="img/logo.jpg" alt="logo" width="150" height="150"></a>
+        <h1>GT YT</h1>
+        <h2>Das Offizielle GeroTop YouTube</h2>
+        
+
+    </header>
+
+    <button id="open-nav-btn" onclick="toggleNav()">☰ Öffnen</button>
+
+<div id="navbar">
+  <a id="Navigationa" href="index.html">Startseite</a>
+  <a id="Navigationa" href="uncutClips.html">uncutClips</a>
+  <a id="Navigationa" href="uncutVideos.html">uncutVideos</a>
+  <a id="Navigationa" href="Videos.html">Videos</a>
+</div>
+
+
+<script>
+  function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+      window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  function toggleNav() {
+    var navbar = document.getElementById('navbar');
+    navbar.style.left = (navbar.style.left === '0px') ? '-90px' : '0px';
+  }
+</script>
+    
+    
+    
+    <ul id="Navigationul">	
+        <li id="Navigationli">Startseite</li>
+        <li id="Navigationli"><a id="Navigationa" href="uncutClips.html">uncutClips</a></li>
+        <li id="Navigationli"><a id="Navigationa" href="uncutVideos.html">uncutVideos</a></li>
+        <li id="Navigationli"><a id="Navigationa" href="Videos.html">Videos</a></li>
+        
+    </ul>
+
+    <p>
+        Dies ist das Offizielle GeroTop YT. Hier finded ihr uncutClips, Videos und uncutVideos.
+    </p>
+    <p>
+        Falls ihr nicht wisst wer GeroTop ist. Hier eine erklärung:
+    </p>
+    <p>
+        GeroTop ist ein kleiner YouTuber der sich dachte ach komm lass mal in den Ferien eine WebSite programmiren. Also dat er es.
+    </p>
+    <p>
+        Hier ist der Link zu meinem YouTube Kanal: <a href="https://www.youtube.com/@GeroTopp?sub_confirmation=1" target="_blank">LINK</a>
+    </p>
+    <div id="footer">
+        <footer>
+            <a id="footera" href="Kontakt.html">Kontakt</a>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
